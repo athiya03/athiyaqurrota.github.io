@@ -1,0 +1,103 @@
+/* === STYLING UNTUK JUmbotron === */
+
+.jumbotron {
+  padding-top: 2rem;
+  background-color: #fff0f5;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.profile-photo {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(255, 105, 180, 0.3);
+}
+
+.photo-container {
+  position: relative;
+  display: inline-block;
+}
+
+.photo-container::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: linear-gradient(45deg, #ff69b4, #ffb6c1, #ff69b4);
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0.3;
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.cta-buttons {
+  margin-top: 2rem;
+}
+
+.btn-primary {
+  background-color: #ff69b4;
+  border-color: #ff69b4;
+  padding: 12px 30px;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #e0559c;
+  border-color: #e0559c;
+  transform: translateY(-2px);
+}
+
+.btn-outline-dark {
+  padding: 12px 30px;
+  font-weight: 600;
+  border-width: 2px;
+}
+
+.btn-outline-dark:hover {
+  transform: translateY(-2px);
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 768px) {
+  .jumbotron {
+    text-align: center;
+    padding-top: 4rem;
+  }
+
+  .profile-photo {
+    width: 220px;
+    height: 220px;
+  }
+
+  .display-4 {
+    font-size: 2.5rem;
+  }
+
+  .cta-buttons .btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .cta-buttons .me-3 {
+    margin-right: 0 !important;
+  }
+}

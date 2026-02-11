@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- bootstrap icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+
+    <style>
+      .jumbotron {
+        padding-top: 2rem;
+        background-color: #fff0f5;
+      }
+
+      body {
+        background-color: #fff0f5;
+        margin: 0;
+        font-family: "Arial", sans-serif;
+      }
+
+      section {
+        padding-top: 5rem;
+        background-color: #fff0f5;
+      }
+
+      .social-media a {
+        font-size: 18px;
+        color: #000;
+        text-decoration: none;
+        display: inline-block;
+        margin: 5px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        border: 1px solid #ff69b4;
+      }
+
+      .social-media a:hover {
+        background-color: #ff69b4;
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(255, 105, 180, 0.3);
+      }
+
+      /* Styling untuk card projects */
+      .card {
+        border: none;
+        border-radius: 15px;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        height: 100%;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(255, 105, 180, 0.2);
+      }
+
+      .card-img-top {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        border-bottom: 3px solid #ff69b4;
+      }
+
+      .card-body {
+        padding: 1.5rem;
+        background-color: white;
+      }
+
+      .card-text {
+        color: #555;
+        line-height: 1.6;
+        font-size: 0.95rem;
+      }
+
+      .navbar {
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .btn-primary {
+        background-color: #ff69b4;
+        border-color: #ff69b4;
+      }
+
+      .btn-primary:hover {
+        background-color: #e0559c;
+        border-color: #e0559c;
+      }
+
+      h1,
+      h2 {
+        color: #d63384;
+        font-weight: 600;
+      }
+
+      .lead {
+        color: #666;
+        font-size: 1.1rem;
+      }
+    </style>
+
+    <title>portofolio tya</title>
+  </head>
+  <body id="Home">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow fixed-top" style="background-color: rgb(255, 182, 193)">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#" style="color: #d63384">Athiya Qurrota A</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="batik.html">Batik</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- akhir navbar -->
+
+    <!-- jumbotron -->
+<section class="jumbotron text-center" id="home">
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <!-- Foto di atas teks untuk mobile, di samping untuk desktop -->
+      <div class="col-lg-4 col-md-5 mb-4 mb-md-0">
+        <div class="photo-container">
+          <img src="Gambar WhatsApp 2025-10-01 pukul 07.59.13_36f36164.jpg" alt="Athiya Qurrota" class="rounded-circle img-thumbnail profile-photo" style="border-color: #ff69b4; border-width: 3px;" />
+        </div>
+      </div>
+      <div class="col-lg-8 col-md-7">
+        <h1 class="display-4 fw-bold mb-3">Athiya Qurrota A</h1>
+        <p class="lead mb-4" style="max-width: 600px; margin: 0 auto;">
+          Saya athiya, seorang pelajar yang bersemangat dalam menciptakan solusi yang inovatif dan berkualitas. Dengan latar belakang di pengembangan perangkat lunak
+        </p>
+        <div class="cta-buttons">
+          <a href="#projects" class="btn btn-primary btn-lg me-3">
+            <i class="fas fa-images me-2"></i>Lihat Portfolio
+          </a>
+          <a href="#contact" class="btn btn-outline-dark btn-lg">
+            <i class="fas fa-envelope me-2"></i>Hubungi Saya
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path
+      fill="#ff69b4"
+      fill-opacity="0.1"
+      d="M0,96L30,106.7C60,117,120,139,180,138.7C240,139,300,117,360,128C420,139,480,181,540,213.3C600,245,660,267,720,229.3C780,192,840,96,900,74.7C960,53,1020,107,1080,154.7C1140,203,1200,245,1260,261.3C1320,277,1380,267,1410,261.3L1440,256L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+    ></path>
+  </svg>
+</section>
+<!-- akhir jumbotron -->
+
+    <!-- about -->
+    <section id="about">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col">
+            <h2>About Me</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center fs-5 text-center">
+          <div class="col-md-4 mb-4">
+            <p>Hai! Nama saya Athiya, seorang pelajar dari SMKN 5 Malang, kelas 2 jurusan RPL. </p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <p> Ketertarikan saya terletak pada titik temu antara keindahan visual dan interaksi antarmanusia. Saya berupaya mengimplementasikan kreativitas melalui riasan wajah dan eksplorasi sudut pandang kamera untuk menghasilkan karya yang representatif. Bagi saya, setiap proses kreatif adalah ruang untuk membangun relasi, di mana setiap individu memiliki narasi unik yang layak untuk divisualisasikan</p>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ff69b4"
+          fill-opacity="0.1"
+          d="M0,96L30,106.7C60,117,120,139,180,138.7C240,139,300,117,360,128C420,139,480,181,540,213.3C600,245,660,267,720,229.3C780,192,840,96,900,74.7C960,53,1020,107,1080,154.7C1140,203,1200,245,1260,261.3C1320,277,1380,267,1410,261.3L1440,256L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- akhir about -->
+
+    <!-- projects -->
+    <section id="projects">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col">
+            <h2>My Projects</h2>
+            <p class="text-muted">Hal menarik tentang saya</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="kmnks.png" class="card-img-top" alt="Project Casual Chic" />
+              <div class="card-body">
+                <h5 class="card-title" style="color: #d63384">communication</h5>
+                <p class="card-text"> Saya percaya bahwa komunikasi bukan sekadar bertukar informasi, tapi soal bagaimana kita membangun kepercayaan. Dalam setiap proyek, prioritas saya adalah menciptakan ruang diskusi yang inklusif agar kolaborasi bisa berjalan lebih efektif dan berdampak</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="makeup.jpeg" class="card-img-top" alt="Project Campaign Styling" />
+              <div class="card-body">
+                <h5 class="card-title" style="color: #d63384">Beauty</h5>
+                <p class="card-text">
+                  Makeup bagi saya adalah alat untuk memperkuat karakter seseorang. Fokus saya bukan untuk mengubah wajah secara drastis, melainkan menonjolkan fitur terbaik yang sudah ada agar rasa percaya diri bisa muncul secara alami, baik secara langsung maupun saat di depan lensa
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="konten.jpeg" class="card-img-top" alt="Project Natural Bride" />
+              <div class="card-body">
+                <h5 class="card-title" style="color: #d63384">Creative Production</h5>
+                <p class="card-text">Di tengah banyaknya arus informasi, saya fokus pada pembuatan konten yang tidak hanya menarik secara visual, tapi juga punya pesan yang jelas. Saya senang bereksperimen dengan berbagai format digital untuk menemukan cara paling efektif dalam menyampaikan ide ke audiens</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="foto.jpeg" class="card-img-top" alt="Project Glamour Night" />
+              <div class="card-body">
+                <h5 class="card-title" style="color: #d63384">Articulation</h5>
+                <p class="card-text">Visual yang kuat lahir dari pemahaman terhadap komposisi dan ekspresi. Saya terbiasa mengeksplorasi sudut pandang serta pencahayaan untuk memastikan setiap frame mampu menyampaikan emosi yang tepat, bukan hanya sekadar gambar yang terlihat bagus</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ff69b4"
+          fill-opacity="0.1"
+          d="M0,96L30,106.7C60,117,120,139,180,138.7C240,139,300,117,360,128C420,139,480,181,540,213.3C600,245,660,267,720,229.3C780,192,840,96,900,74.7C960,53,1020,107,1080,154.7C1140,203,1200,245,1260,261.3C1320,277,1380,267,1410,261.3L1440,256L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- akhir projects-->
+
+    <!-- Section Kontak -->
+    <section id="contact">
+      <div class="container">
+        <div class="row text-center mb-4">
+          <div class="col">
+            <h2>Contact Me</h2>
+            <p class="text-muted">Hubungi saya untuk kolaborasi atau pertanyaan</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-lg-6">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="name" aria-describedby="name" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="email" />
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Pesan</label>
+                <textarea class="form-control" id="pesan" rows="5"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Kirim</button>
+            </form>
+
+            <!-- Ikon Media Sosial -->
+            
+<div class="social-media text-center mt-5">
+  <a href="https://www.instagram.com/thyynaaaa" target="_blank" class="btn btn-outline-dark me-2"> 
+    <i class="fab fa-instagram"></i> Instagram 
+  </a>
+  <a href="https://www.tiktok.com/@mothenna_" target="_blank" class="btn btn-outline-dark me-2"> 
+    <i class="fab fa-tiktok"></i> TikTok 
+  </a>
+  <a href="https://github.com/username-anda" target="_blank" class="btn btn-outline-dark"> 
+    <i class="fab fa-github"></i> GitHub 
+  </a>
+</div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ff69b4"
+          fill-opacity="0.1"
+          d="M0,0L21.8,32C43.6,64,87,128,131,160C174.5,192,218,192,262,202.7C305.5,213,349,235,393,234.7C436.4,235,480,213,524,197.3C567.3,181,611,171,655,165.3C698.2,160,742,160,785,160C829.1,160,873,160,916,181.3C960,203,1004,245,1047,250.7C1090.9,256,1135,224,1178,208C1221.8,192,1265,192,1309,186.7C1352.7,181,1396,171,1418,165.3L1440,160L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Akhir Section Kontak -->
+
+    <!-- Footer -->
+    <footer class="text-white text-center pb-3" style="background-color: #ff69b4">
+      <p class="mb-0 py-3">Created with <i class="bi bi-suit-heart-fill text-danger"></i> by <a href="https://www.instagram.com/thyynaaaa" class="text-white fw-bold">Athiya Qurrota A</a></p>
+    </footer>
+    <!-- Akhir Footer -->
+     <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Athiya</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* VARIABLES & RESET */
+        :root {
+            --primary-pink: #ff4d94;
+            --secondary-pink: #ff85b3;
+            --light-pink: #ffe6f0;
+            --dark-pink: #d9367a;
+            --accent-pink: #ffb6d5;
+            --text-dark: #4a4a4a;
+            --text-light: #777;
+            --white: #ffffff;
+            --gradient: linear-gradient(135deg, #ff4d94 0%, #ff85b3 100%);
+            --gradient-light: linear-gradient(135deg, #ffe6f0 0%, #ffd1e6 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', 'Segoe UI', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #fffafc;
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ANIMATIONS */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* NAVBAR */
+        nav {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 5px 20px rgba(255, 77, 148, 0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-pink);
+            display: flex;
+            align-items: center;
+        }
+
+        .logo i {
+            margin-right: 10px;
+            font-size: 1.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 5px 0;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-pink);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background: var(--gradient);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 25px;
+            height: 20px;
+        }
+
+        .hamburger span {
+            display: block;
+            height: 3px;
+            width: 100%;
+            background-color: var(--text-dark);
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
+
+        /* HEADER/HERO SECTION */
+        .hero {
+            background: var(--gradient);
+            color: white;
+            padding: 180px 0 120px;
+            position: relative;
+            overflow: hidden;
+            margin-top: 80px;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"><path fill="rgba(255,255,255,0.1)" d="M0,50 Q250,0 500,50 T1000,50 L1000,100 L0,100 Z"></path></svg>');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-content {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: white;
+            color: var(--primary-pink);
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: float 2s ease-in-out infinite;
+        }
+
+        .scroll-indicator i {
+            font-size: 1.5rem;
+            color: white;
+            opacity: 0.8;
+        }
+
+        /* DECORATIVE ELEMENTS */
+        .floating-shapes {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .shape {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .shape-1 {
+            width: 100px;
+            height: 100px;
+            top: 10%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .shape-2 {
+            width: 150px;
+            height: 150px;
+            top: 70%;
+            left: 80%;
+            animation-delay: 2s;
+        }
+
+        .shape-3 {
+            width: 80px;
+            height: 80px;
+            top: 40%;
+            left: 85%;
+            animation-delay: 4s;
+        }
+
+        .shape-4 {
+            width: 120px;
+            height: 120px;
+            top: 80%;
+            left: 15%;
+            animation-delay: 1s;
+        }
+
+        .shape-5 {
+            width: 60px;
+            height: 60px;
+            top: 20%;
+            left: 75%;
+            animation-delay: 3s;
+        }
+
+        /* SECTION STYLES */
+        section {
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+        }
+
+        .section-title h2 {
+            display: inline-block;
+            font-size: 2.5rem;
+            color: var(--primary-pink);
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: var(--gradient);
+            border-radius: 3px;
+        }
+
+        /* ABOUT SECTION */
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .about-img {
+            flex: 1;
+            text-align: center;
+            position: relative;
+        }
+
+        .about-img::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            width: 100%;
+            height: 100%;
+            border: 3px solid var(--accent-pink);
+            border-radius: 20px;
+            z-index: -1;
+        }
+
+        .about-img img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(255, 77, 148, 0.2);
+            transition: all 0.5s ease;
+        }
+
+        .about-img img:hover {
+            transform: scale(1.03);
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .contact-info {
+            margin-top: 30px;
+            padding: 25px;
+            background: var(--light-pink);
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(255, 182, 213, 0.3);
+            border-left: 4px solid var(--primary-pink);
+            animation: pulse 3s infinite;
+        }
+
+        /* TIMELINE STYLES */
+        .timeline-container {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .timeline-container::before {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background: var(--gradient);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+            border-radius: 10px;
+        }
+
+        .timeline-item {
+            padding: 20px 40px;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        .timeline-item:nth-child(odd) {
+            left: 0;
+            animation: fadeInLeft 0.8s ease;
+        }
+
+        .timeline-item:nth-child(even) {
+            left: 50%;
+            animation: fadeInRight 0.8s ease;
+        }
+
+        .timeline-content {
+            padding: 25px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(255, 182, 213, 0.2);
+            border-top: 4px solid var(--primary-pink);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .timeline-content:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(255, 77, 148, 0.3);
+        }
+
+        .timeline-date {
+            font-weight: bold;
+            color: var(--primary-pink);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .timeline-date i {
+            margin-right: 8px;
+        }
+
+        .timeline-content h3 {
+            color: var(--dark-pink);
+            margin-bottom: 10px;
+        }
+
+        .timeline-content ul {
+            padding-left: 20px;
+        }
+
+        .timeline-content li {
+            margin-bottom: 8px;
+        }
+
+        /* SKILLS SECTION */
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .skill-category {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(255, 182, 213, 0.2);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .skill-category::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--gradient);
+        }
+
+        .skill-category:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(255, 77, 148, 0.3);
+        }
+
+        .skill-category h3 {
+            color: var(--dark-pink);
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .skill-category h3 i {
+            margin-right: 10px;
+        }
+
+        .skill-item {
+            margin-bottom: 20px;
+        }
+
+        .skill-name {
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--dark-pink);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .skill-bar {
+            height: 12px;
+            background-color: var(--light-pink);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill-level {
+            height: 100%;
+            background: var(--gradient);
+            border-radius: 10px;
+            width: 0;
+            transition: width 1.5s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* PROJECTS SECTION */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(255, 182, 213, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(255, 77, 148, 0.3);
+        }
+
+        .project-img {
+            height: 200px;
+            background: var(--gradient-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-pink);
+            font-size: 3rem;
+        }
+
+        .project-content {
+            padding: 25px;
+        }
+
+        .project-content h3 {
+            color: var(--dark-pink);
+            margin-bottom: 10px;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 15px;
+        }
+
+        .tag {
+            padding: 5px 12px;
+            background: var(--light-pink);
+            color: var(--primary-pink);
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        /* FOOTER */
+        footer {
+            background: var(--gradient);
+            color: white;
+            text-align: center;
+            padding: 60px 0 30px;
+            margin-top: 40px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            color: white;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: white;
+            color: var(--primary-pink);
+            transform: translateY(-5px);
+        }
+
+        /* RESPONSIVE STYLES */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                right: -100%;
+                width: 70%;
+                height: calc(100vh - 80px);
+                background-color: white;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                padding-top: 50px;
+                transition: right 0.3s ease;
+                box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-links.active {
+                right: 0;
+            }
+
+            .nav-links li {
+                margin: 15px 0;
+            }
+
+            .about-content {
+                flex-direction: column;
+            }
+
+            .timeline-container::before {
+                left: 31px;
+            }
+
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+
+            .timeline-item:nth-child(even) {
+                left: 0;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating Background Shapes -->
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo"><i class="fas fa-heart"></i>Athiya</div>
+                <ul class="nav-links">
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#education">Pendidikan</a></li>
+                    <li><a href="#experience">Pengalaman</a></li>
+                    <li><a href="#skills">Kemampuan</a></li>
+                    <li><a href="#projects">Proyek</a></li>
+                       <li><a href="batik1.html">Web Batik</a></li>
+          </ul>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header/Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Athiya Qurrota Aina</h1>
+                <p>Siswa XI-PPLG 1 | SMKN 5 Malang</p>
+                <a href="#about" class="btn">Jelajahi Portofolio</a>
+            </div>
+            <div class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+            </div>
+
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="tya.jpg" alt="Athiya Qurrota ">
+                </div>
+
+                <div class="about-text">
+                    <p>Nama saya Athiya Qurrota Aina, lahir di kota Malang pada tanggal 20 Maret 2009. Saat ini saya merupakan siswi SMKN 5 Malang tahun ajaran 2024/2025, kelas XI PPLG 1 dengan jurusan Pengembangan Perangkat Lunak dan Gim (PPLG).</p>
+                    <p>Jurusan ini saya pilih karena sejak kecil saya memiliki minat yang besar terhadap dunia teknologi, terutama dalam bidang komputer, desain, dan pemrograman.</p>
+                    <p>Selain aktif belajar di bidang akademik, saya juga mengikuti berbagai kegiatan ekstrakurikuler. Salah satu kegiatan yang saya tekuni adalah ekstrakurikuler basket, di mana saya dapat menyalurkan hobi sekaligus melatih kreativitas.</p>
+                    
+                    <div class="contact-info">
+                        <p>
+                            <strong>Kontak saya:</strong><br />
+                            <i class="fas fa-phone"></i> WA: 0895414644181<br />
+                            <i class="fas fa-envelope"></i> Email: qurrotaathiya@gmail.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <div class="section-title">
+                <h2>Riwayat Pendidikan</h2>
+            </div>
+
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date"><i class="far fa-calendar-alt"></i> 2024 - Sekarang</div>
+                        <h3>SMKN 5 Malang</h3>
+                        <p>Jurusan Pengembangan Perangkat Lunak dan Gim (PPLG)</p>
+                        <p><em>Mempelajari dasar-dasar pemrograman, desain web, dan pengembangan aplikasi</em></p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date"><i class="far fa-calendar-alt"></i> 2021 - 2024</div>
+                        <h3>MTSs Darunnajah Karangploso</h3>
+                        <p><em>Aktif di ekstrakurikuler drumband dan volly</em></p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date"><i class="far fa-calendar-alt"></i> 2015 - 2021</div>
+                        <h3>MI Yaspuri Malang</h3>
+                        <p><em>Menjuarai ajang fashionshow,fotogenic dan melukis</em></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <div class="section-title">
+                <h2>Pengalaman Organisasi & Projek</h2>
+            </div>
+
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date"><i class="far fa-calendar-alt"></i> 2020 - Sekarang</div>
+                        <h3>Anggota Karang Taruna</h3>
+                        <p>Bidang Teknologi Informasi</p>
+                        <ul>
+                            <li>Membuat desain poster digital untuk kegiatan</li>
+                            <li>Mengelola media sosial</li>
+                            <li>Membantu pembuatan website informasi</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date"><i class="far fa-calendar-alt"></i> 2023 - 2024</div>
+                        <h3>Projek Sekolah</h3>
+                        <p>Pembuatan Website Portofolio</p>
+                        <ul>
+                            <li>Mendesain tampilan website menggunakan Figma</li>
+                            <li>Mengimplementasikan desain menggunakan HTML, CSS</li>
+                            <li>Menambahkan fitur interaktif dengan JavaScript dasar</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date"><i class="far fa-calendar-alt"></i> 2022</div>
+                        <h3>Kerja Bakti Sekolah</h3>
+                        <p>Koordinator Tim Dekorasi</p>
+                        <ul>
+                            <li>Merancang konsep dekorasi area sekolah</li>
+                            <li>Memimpin tim kecil untuk eksekusi desain</li>
+                            <li>Membuat bahan presentasi menggunakan Canva</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-title">
+                <h2>Kemampuan/Skills</h2>
+            </div>
+
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i class="fas fa-laptop-code"></i> Teknologi</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">HTML/CSS <span>65%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-width="65"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">JavaScript Dasar <span>65%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-width="65"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Microsoft Office <span>80%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-width="80"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-palette"></i> Desain</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">Canva <span>90%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-width="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Figma Dasar <span>70%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-width="70"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Editing Foto Dasar <span>80%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-width="80"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-star"></i> Lainnya</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">Public Speaking <span>90%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-width="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Kerja Tim <span>90%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-width="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Manajemen Waktu <span>85%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-width="85"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                 <div class="social-links">
+                        <a href="https://www.tiktok.com/@mothenna_" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/thyynaaaa" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+            </div>
+            <p>&copy; 2024 Athiya Qurrota Athiya. All rights reserved.</p>
+            <p>Created with <i class="fas fa-heart"></i> by Athiya</p>
+        </div>
+    </footer>
+
+    
+    <script>
+
+    
+        // Hamburger menu toggle
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+            hamburger.classList.toggle("active");
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll(".nav-links a").forEach((link) => {
+            link.addEventListener("click", () => {
+                navLinks.classList.remove("active");
+                hamburger.classList.remove("active");
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener("click", function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute("href");
+                const targetElement = document.querySelector(targetId);
+
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: "smooth",
+                });
+            });
+        });
+
+        // Animate skill bars when scrolled into view
+        const skillLevels = document.querySelectorAll(".skill-level");
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    skillLevels.forEach(level => {
+                        const width = level.getAttribute("data-width");
+                        setTimeout(() => {
+                            level.style.width = {width};
+                        }, 200);
+                    });
+                }
+            });
+        }, { threshold: 0.5 });
+
+        observer.observe(document.getElementById("skills"));
+
+        // Navbar background on scroll
+        window.addEventListener("scroll", () => {
+            const nav = document.querySelector("nav");
+            if (window.scrollY > 50) {
+                nav.style.background = "rgba(255, 255, 255, 0.98)";
+                nav.style.boxShadow = "0 5px 20px rgba(255, 77, 148, 0.15)";
+            } else {
+                nav.style.background = "rgba(255, 255, 255, 0.95)";
+                nav.style.boxShadow = "0 5px 20px rgsba(255, 77, 148, 0.1)";
+            }
+        });
+
+        // Add animation to elements on page load
+        window.addEventListener("load", () => {
+            document.querySelector(".hero-content").classList.add("animated");
+        });
+    </script>
+</body>
+</html>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
